@@ -5,3 +5,14 @@ body {
     color:rgb(255, 255, 255);
     font-family: "Comfortaa", sans-serif;
 }
+
+footer {
+    text-align: center;
+}
+
+/* Removing default link colours and decoration for the language page. */
+
+body > div > a.language-option {
+    color: white !important;
+    text-decoration: none;
+}

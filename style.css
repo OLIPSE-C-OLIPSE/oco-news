@@ -2,7 +2,7 @@
 
 body {
     background-color:#ACE058;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     font-family: "Comfortaa", sans-serif;
 }
 
@@ -13,6 +13,47 @@ footer {
 /* Removing default link colours and decoration for the language page. */
 
 body > div > a.language-option {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     text-decoration: none;
+}
+
+.blog {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+a {
+    color: rgb(0, 81, 255);
+    font-weight: bold;
+}
+
+.code {
+    background-color:dimgray;
+    color: white;
+}
+
+th {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.logo {
+    width: 15%;
+    height: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: ease 0.3s
+}
+.logo:hover {
+    filter: drop-shadow(0 0 15px white);
+    transform: scale(1.05);
+    transition: ease 0.3s
+}
+
+.blogpost {
+    border: 2px solid black;
+    padding: 3px;
+    margin-left: 35%;
+    margin-right: 35%;
 }

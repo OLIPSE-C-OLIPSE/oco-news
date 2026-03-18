@@ -3,13 +3,22 @@
     <title>Olipse C Olipse</title>
     <link rel="icon" href="assets/favicon-PNGBACK.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <img src="assets/oco.png" style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
+    <img src="assets/oco.png" class="logo">
     <p>Where could you be?</p>
     <p>Waar kan je zijn?</p>
     
     <script>
-        const userLang = navigator.language || navigator.userLanguage;
+        const userLang = (navigator.language || navigator.userLanguage).substring(0, 2);
+
+        if (userLang === 'en') {
+            window.location.href = 'EN/index.html';
+        } else if (userLang === 'nl') {
+            window.location.href = 'NL/index.html';
+        } else {
+            window.location.href = 'EN/index.html'; // fallback
+        }
     </script>
 </body>

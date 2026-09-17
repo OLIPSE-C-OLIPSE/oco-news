@@ -1,5 +1,8 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
 
+/* Main */
 body {
     background-color:#ACE058;
     color:rgb(0, 0, 0);
@@ -17,14 +20,17 @@ body > div > a.language-option {
     text-decoration: none;
 }
 
+/* Blog */
 .blog {
     margin-left: 15%;
     margin-right: 15%;
 }
 
-a {
-    color: rgb(0, 81, 255);
-    font-weight: bold;
+.blogpost {
+    border: 2px solid black;
+    padding: 3px;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 .code {
@@ -37,6 +43,7 @@ th {
     padding: 5px;
 }
 
+/* Logo */
 .logo {
     width: 15%;
     height: 15%;
@@ -51,9 +58,34 @@ th {
     transition: ease 0.3s
 }
 
-.blogpost {
-    border: 2px solid black;
-    padding: 3px;
-    margin-left: 35%;
-    margin-right: 35%;
+/* Misc */
+.errorcode {
+    font-family: "Climate Crisis", sans-serif;
+    text-align: center;
+    font-size: 70px;
+}
+
+a {
+    color: rgb(0, 81, 255);
+    font-weight: bold;
+}
+
+/* Dark mode */
+.darkmode {
+    background-color: #96A631;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+}
+
+button {
+    margin: auto;
+    display: flex;
+    background-color: #96A631;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.darkmode-button {
+    background-color: #ACE058;
+    border-color: white;
 }

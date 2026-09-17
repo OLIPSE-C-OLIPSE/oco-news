@@ -1,3 +1,25 @@
+function darkmode(btn) {
+  var element = document.body
+  element.classList.toggle("darkmode");
+  
+  var button = document.getElementById("darkmodeBTN");
+  button.classList.toggle("darkmode-button");
+
+  if (document.body.classList.contains("darkmode")) {
+      localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+};
+
+window.onload = function () {
+  const savedTheme = localStorage.getItem("theme")
+
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark");
+  }
+};
+
 // OCO logo lmao
 console.log(`                                                                   .:^!7?JY55PPPPP55YJ?7!~:.                                                          
                                                              .^7YPB#&&&&&##BBBBBBBBB##&&&&&&BPY7~:                                                    

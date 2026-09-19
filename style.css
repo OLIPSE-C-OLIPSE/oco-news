@@ -28,9 +28,15 @@ body > div > a.language-option {
 
 .blogpost {
     border: 2px solid black;
-    padding: 3px;
+    padding: 1%;
     margin-left: 35%;
     margin-right: 35%;
+
+}
+
+.blogpost a {
+    display: block;
+    text-align: center;
 }
 
 .code {
@@ -72,15 +78,23 @@ a {
 
 /* Dark mode */
 .darkmode {
-    background-color: #96A631;
+    background-color: #394007;
     color: white;
     font-family: "Comfortaa", sans-serif;
+}
+
+.darkmode a {
+    color: #F3BDFF
+}
+
+.darkmode th {
+    border-bottom: 1px solid white;
 }
 
 button {
     margin: auto;
     display: flex;
-    background-color: #96A631;
+    background-color: #394007;
     border-color: black;
     border-radius: 5px;
 }
@@ -88,4 +102,20 @@ button {
 .darkmode-button {
     background-color: #ACE058;
     border-color: white;
+}
+
+.darkmode :focus-visible {
+    outline: 3px dashed #F3BDFF
+}
+
+.darkmode .blogpost {
+    border: 2px solid white
+}
+
+/* Keyboard nav */
+
+:focus-visible {
+    outline: 3px dashed rgb(0, 81, 255);
+    outline-offset: 5px;
+    border-radius: 5px;
 }

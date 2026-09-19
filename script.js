@@ -1,4 +1,4 @@
-function darkmode(btn) {
+function darkmode() {
   var element = document.body
   element.classList.toggle("darkmode");
   
@@ -16,7 +16,7 @@ window.onload = function () {
   const savedTheme = localStorage.getItem("theme")
 
   if (savedTheme === "dark") {
-    document.body.classList.add("dark");
+    document.body.classList.add("darkmode");
   }
 };
 

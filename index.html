@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Olipse C Olipse</title>
     <link rel="icon" href="assets/favicon-PNGBACK.png">
@@ -14,19 +15,9 @@
     <meta property="og:type" content="website">
 </head>
 <body>
-    <img src="assets/oco.png" class="logo">
-    <p>Where could you be?</p>
-    <p>Waar kan je zijn?</p>
-    
-    <script>
-        const userLang = (navigator.language || navigator.userLanguage).substring(0, 2);
-
-        if (userLang === 'en') {
-            window.location.href = 'EN/index.html';
-        } else if (userLang === 'nl') {
-            window.location.href = 'NL/index.html';
-        } else {
-            window.location.href = 'EN/index.html'; // fallback
-        }
-    </script>
+    <img alt="Olipse C Olipse logo." src="assets/oco.png" class="logo">
+    <p style="text-align: center;">Where could you be?</p>
+    <p style="text-align: center;">We no longer have Dutch available, use English for now. Sorry!</p>
+    <br>
+    <div class="language-option" style="text-align: center;"><a href="EN/index.html" class="language-option"><img alt="Great Britain flag" src="https://github.com/markjames/famfamfam-flag-icons/blob/master/icons/png/gb.png?raw=true" style="width: 20px;"> | <img alt="United States of America flag" src="https://github.com/markjames/famfamfam-flag-icons/blob/master/icons/png/us.png?raw=true" style="width: 20px;"></a></div>
 </body>

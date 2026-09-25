@@ -1,9 +1,6 @@
 function darkmode() {
   var element = document.body
   element.classList.toggle("darkmode");
-  
-  var button = document.getElementById("darkmodeBTN");
-  button.classList.toggle("darkmode-button");
 
   if (document.body.classList.contains("darkmode")) {
       localStorage.setItem("theme", "dark");
@@ -12,11 +9,46 @@ function darkmode() {
   }
 };
 
+function dyslexiaFont() {
+  var element = document.body
+  element.classList.toggle("dyslexiaFont");
+
+  if (document.body.classList.contains("dyslexiaFont")) {
+      localStorage.setItem("font", "dyslexia");
+  } else {
+    localStorage.setItem("font", "regular")
+  }
+};
+
+const today = new date();
+const month = today.getMonth()
+const day = today.getDay()
+
+const ocoDoodles = {
+  "12-25": "assets/special/OCO_Christmas.png",
+  "4-23": "assets/special/OCO_Birthday.png",
+  "10-31": "assets/special/OCO_Halloween.png",
+  "7-21": "assets/special/OCO_Belgium.png",
+  "11-11": "assets/special/OCO_Peace.png"
+};
+
+const logo = document.querySelector(".logo")
+const specialLogo = specialLogo[`$(month)-$(day)`];
+
+if (specialLogo) {
+  logo.src = specialLogo;
+}
+
 window.onload = function () {
   const savedTheme = localStorage.getItem("theme")
+  const currentFont = localStorage.getItem("font")
 
   if (savedTheme === "dark") {
     document.body.classList.add("darkmode");
+  }
+
+  if (currentFont === "dyslexia") {
+    document.body.classList.add("dyslexiaFont")
   }
 };
 

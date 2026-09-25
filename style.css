@@ -1,6 +1,12 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("assets/opendyslexic/OpenDyslexic-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Main */
 body {
@@ -11,6 +17,13 @@ body {
 
 footer {
     text-align: center;
+}
+
+button {
+    display: flex;
+    background-color: #394007;
+    border-color: black;
+    border-radius: 5px;
 }
 
 /* Removing default link colours and decoration for the language page. */
@@ -53,7 +66,7 @@ th {
 .logo {
     width: 15%;
     height: 15%;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     transition: ease 0.3s
@@ -91,15 +104,7 @@ a {
     border-bottom: 1px solid white;
 }
 
-button {
-    margin: auto;
-    display: flex;
-    background-color: #394007;
-    border-color: black;
-    border-radius: 5px;
-}
-
-.darkmode-button {
+.darkmode button {
     background-color: #ACE058;
     border-color: white;
 }
@@ -110,6 +115,11 @@ button {
 
 .darkmode .blogpost {
     border: 2px solid white
+}
+
+/* Dyslexia */
+body.dyslexiaFont {
+    font-family: "OpenDyslexic";
 }
 
 /* Keyboard nav */

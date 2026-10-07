@@ -28,8 +28,11 @@ button {
 
 /* Removing default link colours and decoration for the language page. */
 
-body > div > a.language-option {
-    color: rgb(0, 0, 0) !important;
+.language-option {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    gap: 5px;
     text-decoration: none;
 }
 
@@ -125,7 +128,8 @@ body.dyslexiaFont {
 /* Keyboard nav */
 
 :focus-visible {
-    outline: 3px dashed rgb(0, 81, 255);
-    outline-offset: 5px;
-    border-radius: 5px;
+    outline: 2px dashed rgb(0, 81, 255);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
 }

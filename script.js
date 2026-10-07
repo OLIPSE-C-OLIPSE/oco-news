@@ -20,23 +20,78 @@ function dyslexiaFont() {
   }
 };
 
-const today = new date();
+const today = new Date();
 const month = today.getMonth()
-const day = today.getDay()
+const day = today.getDate()
+const image = {
+  "christmas": "/assets/special/OCO_Christmas.png",
+  "halloween": "/assets/special/OCO_Halloween.png",
+  "peace": "/assets/special/OCO_Peace.png",
+  "birthday": "/assets/special/OCO_Birthday.png",
+  "belgium": "/assets/special/OCO_Belgium.png",
+  "belgiumGP": "/assets/special/OCO_BelgiumGP.webp"
+}
 
-const ocoDoodles = {
-  "12-25": "assets/special/OCO_Christmas.png",
-  "4-23": "assets/special/OCO_Birthday.png",
-  "10-31": "assets/special/OCO_Halloween.png",
-  "7-21": "assets/special/OCO_Belgium.png",
-  "11-11": "assets/special/OCO_Peace.png"
-};
+/* Months in JS are zero-index */
+/*
+    JAN = 0 
+    FEB = 1
+    MAR = 2
+    APR = 3
+    MAY = 4
+    JUN = 5
+    JUL = 6
+    AUG = 7
+    SEP = 8
+    OCT = 9
+    NOV = 10
+    DEC = 11
+*/
 
+const ocoDoodles = [
+  {
+    month: 11,
+    day: 25,
+    image: 'christmas'
+  },
+  {
+    month: 9,
+    day: 31,
+    image: 'halloween'
+  },
+  {
+    month: 10,
+    day: 11,
+    image: 'peace'
+  },
+  {
+    month: 3,
+    day: 23,
+    image: 'birthday'
+  },
+  {
+    month: 6,
+    day: 21,
+    image: 'belgium'
+  },
+  {
+    month: 6,
+    day: 25,
+    image: 'belgiumGP'
+  }
+];
+
+console.log("Current month:",today.getMonth())
+console.log("Current day:",today.getDate())
+
+const specialLogo = ocoDoodles.find(
+  doodle => doodle.month === month && doodle.day === day
+);
 const logo = document.querySelector(".logo")
-const specialLogo = specialLogo[`$(month)-$(day)`];
+
 
 if (specialLogo) {
-  logo.src = specialLogo;
+  logo.src = image[specialLogo.image];
 }
 
 window.onload = function () {

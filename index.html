@@ -4,7 +4,7 @@
     <title>Olipse C Olipse</title>
     <link rel="icon" href="assets/favicon-PNGBACK.png">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <meta name="description" content="Sometimes you need a nice laugh.">
     <meta charset="utf-8">
     <!--Open Graph protocol stuff-->
@@ -19,5 +19,16 @@
     <p style="text-align: center;">Where could you be?</p>
     <p style="text-align: center;">We no longer have Dutch available, use English for now. Sorry!</p>
     <br>
-    <div class="language-option" style="text-align: center;"><a href="EN/index.html" class="language-option"><img alt="Great Britain flag" src="https://github.com/markjames/famfamfam-flag-icons/blob/master/icons/png/gb.png?raw=true" style="width: 20px;"> | <img alt="United States of America flag" src="https://github.com/markjames/famfamfam-flag-icons/blob/master/icons/png/us.png?raw=true" style="width: 20px;"></a></div>
+    <div class="language-option"></div><a href="EN/index.html" class="language-option">
+        <picture>
+            <source type="image/webp" srcset="https://flagcdn.com/w40/gb.webp, https://flagcdn.com/w80/gb.webp 2x">
+            <source type="image/png" srcset="https://flagcdn.com/w40/gb.png, https://flagcdn.com/w80/gb.png 2x">
+            <img src="https://flagcdn.com/w40/gb.png" width="40" alt="United Kingdom">
+        </picture>
+        <picture>
+            <source type="image/webp" srcset="https://flagcdn.com/w40/us.webp, https://flagcdn.com/w80 gb.webp 2x">
+            <source type="image/png" srcset="https://flagcdn.com/w40/us.webp, https://flagcdn.com/w80/us.png 2x">
+            <img src="https://flagcdn.com/w40/us.png" width="40" alt="United States">
+        </picture>
+</a></div>
 </body>

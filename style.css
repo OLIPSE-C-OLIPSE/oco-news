@@ -26,6 +26,11 @@ button {
     border-radius: 5px;
 }
 
+hr {
+    border: none;
+    border-top: 3px double black;
+}
+
 /* Removing default link colours and decoration for the language page. */
 
 .language-option {
@@ -120,6 +125,23 @@ a {
     border: 2px solid white
 }
 
+.darkmode .profile-box {
+    background-color: #ACE058;
+    color: black;
+}
+
+.darkmode .profile-pfp {
+    border: solid #394007 4px;
+}
+
+.darkmode hr {
+    border-color: white;
+}
+
+.darkmode .profile-box a {
+    color: rgb(0, 81, 255)
+}
+
 /* Dyslexia */
 body.dyslexiaFont {
     font-family: "OpenDyslexic";
@@ -132,4 +154,68 @@ body.dyslexiaFont {
     outline-offset: 4px;
     border-radius: 4px;
 }
+
+/* Profile */
+
+.profile-box {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2%;
+    background-color: #394007;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-box a {
+    color: #F3BDFF
+}
+
+.profile-pfp {
+    width: 6%;
+    height: 6%;
+    border-radius: 100%;
+    border: solid #ACE058 4px;
+    flex-shrink: 0;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info h1,
+.profile-info p,
+.profile-info img,
+.profile-info small {
+    margin: 1px;
+    margin-left: 2px;
+}
+
+.profile-link {
+    border: #394007 solid 2px
+}
+
+.profile-country {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-header {
+    display: flex;
+}
+
+.profile-link,
+.profile-link img {
+    width: 25%;
+    border-radius: 100%;
+    border: none;
+    margin: auto 0;
+    display: block;
 }

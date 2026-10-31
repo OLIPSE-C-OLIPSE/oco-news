@@ -24,12 +24,12 @@ const today = new Date();
 const month = today.getMonth()
 const day = today.getDate()
 const image = {
-  "christmas": "/assets/special/OCO_Christmas.png",
-  "halloween": "/assets/special/OCO_Halloween.png",
-  "peace": "/assets/special/OCO_Peace.png",
-  "birthday": "/assets/special/OCO_Birthday.png",
-  "belgium": "/assets/special/OCO_Belgium.png",
-  "belgiumGP": "/assets/special/OCO_BelgiumGP.webp"
+  "christmas": "/oco-news/assets/special/OCO_Christmas.png",
+  "halloween": "/oco-news/assets/special/OCO_Halloween.png",
+  "peace": "/oco-news/assets/special/OCO_Peace.png",
+  "birthday": "/oco-news/assets/special/OCO_Birthday.png",
+  "belgium": "/oco-news/assets/special/OCO_Belgium.png",
+  "belgiumGP": "/oco-news/assets/special/OCO_BelgiumGP.webp"
 }
 
 /* Months in JS are zero-index */

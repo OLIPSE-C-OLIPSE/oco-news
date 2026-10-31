@@ -77,7 +77,8 @@ th {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    transition: ease 0.3s
+    transition: ease 0.3s;
+    padding: 18px;
 }
 .logo:hover {
     filter: drop-shadow(0 0 15px white);
